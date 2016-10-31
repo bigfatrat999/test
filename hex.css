@@ -1,0 +1,95 @@
+#main_div{
+  width:auto;
+  height:auto;
+  padding:15px;
+}
+.hex_row .hexagon{
+  float: left;
+}
+.clear {
+clear:both;
+}
+.padding{
+  padding-left:34px;
+}
+.border {
+  position: absolute;
+  width:15px;
+  height:15px;
+  z-index: 10;
+}
+.hexagon {
+  position: absolute;
+  width: 59px; 
+  height: 34.06px;
+  margin: 12.03px 5px;
+  background-color:#5c9ccc;
+  background-size: auto 68.1273px;
+  background-position: center;
+}
+.hexagon:hover{
+  background-color:#909090;
+}
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 41.72px;
+  height: 41.72px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 8.64px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 59.0000px;
+  height: 34.06366588218792px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-17.0318px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-17.0318px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-17.0318px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -20.8597px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -20.8597px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 59.0000px;
+  height: 34.0637px;
+  z-index: 2;
+  background: inherit;
+}
+/**/
+#modal-content{
+	display:none;
+}
+.logo{
+  text-align:center;
+}

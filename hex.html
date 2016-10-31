@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>テーブル</title>
+    <link rel="stylesheet" type="text/css" href="hex.css">
+    <link type="text/css" rel="stylesheet"
+      href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.min.css" />
+    <script type="text/javascript"
+      src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript"
+      src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="define.js"></script>
+    <script type="text/javascript" src="hex.js"></script>
+<script type="text/javascript"><!--
+$(function(){
+  hex.init();
+});
+//-->
+</script>
+</head>
+<body>
+<input id="file_save" type="button" value="保存"></input>
+<div id="main_div" class="ui-widget-content">
+</div>
+<div id="modal-content">
+<div id="input_div">
+<input type="hidden" value="-1" id="data_id_hidden"></input>
+</div>
+<br/>
+<input id="content_save" type="button" value="保存"></input>
+</div>
+<hr/>
+<div class="logo">Powered by Montezuma</span>
+</body>
+</html>
